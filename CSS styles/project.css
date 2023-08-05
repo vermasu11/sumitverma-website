@@ -1,0 +1,123 @@
+/* Portfolio Section Styles */
+
+/* Styling the Portfolio section with appropriate margins, background, and padding */
+#portfolio {
+  margin-top: 60px;
+  background-color: #000000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Custom styles for the main heading within the Portfolio section */
+#portfolio h2 {
+  font-family: 'Montserrat';
+  text-align: center;
+  justify-content: center;
+  font-size: 36px;
+  color: #c30000;
+  margin-bottom: 20px;
+}
+
+/* Grid layout for the projects container */
+#portfolio .container {
+  display: grid;
+  grid-template-columns: repeat(3, 380px);
+  grid-gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Styling for individual projects */
+.project {
+  padding: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Font size for paragraphs within projects */
+.project p {
+  font-size: 1rem;
+}
+
+/* Media Query for smaller screens - Two projects in a row */
+@media screen and (max-width: 1290px) {
+  #portfolio .container {
+    grid-template-columns: repeat(2, 380px);
+  }
+}
+
+/* Media Query for even smaller screens - One project per row */
+@media screen and (max-width: 890px) {
+  #portfolio .container {
+    grid-template-columns: repeat(1, 350px);
+  }
+
+  /* Smaller font size for paragraphs on smallest screens */
+  .project p {
+    font-size: 14px;
+  }
+}
+
+/* Styles for project images */
+.project img {
+  max-width: 220px;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Enlarge project images on hover */
+.project img:hover {
+  transform: scale(1.1);
+}
+
+/* Styling for project headings */
+.project h3 {
+  font-size: 1.5rem;
+}
+
+/* Enlarge projects on hover */
+.project:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for the "Details" button within projects */
+.details-button {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #222;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Change background color of "Details" button on hover */
+.project:hover .details-button:hover {
+  background-color: #f3c623;
+}
+
+/* Styling for the "Details" button */
+.details-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Change background color of "Details" button on hover */
+.details-button:hover {
+  background-color: #2980b9;
+}

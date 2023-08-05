@@ -1,0 +1,254 @@
+/* Revised Resume Section Styles with Magazine-Style Layout */
+
+/* Styling for the main Resume section */
+#resume {
+  background: #000000;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 50px auto;
+  max-width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Styling for the container within the Resume section */
+#resume .container {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+}
+
+/* Styling for headings and paragraphs within the Resume section */
+h5 {
+  color: #666;
+}
+
+h1 {
+  font-family: 'Montserrat';
+  font-size: 26px;
+  color: #c30000;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+p.lead {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+/* Styling for the resume timeline */
+.resume-timeline {
+  margin-top: 40px;
+}
+
+/* Styling for the resume header */
+.resume-header h2 {
+  color: #c30000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for the credentials container */
+.credentials-container {
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* Styling for the download icon */
+.download-icon {
+    position: relative;
+    top: 30px;
+    right: 25px;
+    color: #c30000;
+    font-size: 5rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.download-icon i:hover {
+  color: #2e2f72;
+}
+
+/* Styling for the timeline blocks */
+.timeline-block {
+  display: flex;
+  margin-bottom: 40px;
+  position: relative;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #c30000;
+}
+
+/* Icon styles for different work experiences */
+.timeline-ico {
+  height: 3rem;
+  width: 3rem;
+  background: #fff;
+  border-radius: 0%;
+  text-align: center;
+  position: absolute;
+  left: 5px;
+  top: 45%;
+  transform: translateY(-100%);
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+/* Icon styles for different work experiences */
+.timeline-ico i {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.timeline-ico.data-scientist i {
+  color: #2196F3; /* Blue color for data scientist */
+}
+
+.timeline-ico.academic-assistant i {
+  color: #FF9800; /* Orange color for academic assistant */
+}
+
+.timeline-ico.customer-service i {
+  color: #4CAF50; /* Green color for customer service/supervisor */
+}
+
+.timeline-ico.machine-operator i {
+  color: #E91E63; /* Pink color for machine operator */
+}
+
+.timeline-ico.peer-mentor i {
+  color: #9C27B0; /* Purple color for peer mentor */
+}
+
+/* Styles for the timeline header */
+.timeline-header {
+  flex: 1;
+  padding-left: 100px;
+  max-width: 400px;
+}
+
+.timeline-header h3 {
+  margin: 0;
+  color: #222;
+  font-size: 24px;
+}
+
+.timeline-header p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Styles for the timeline content */
+.timeline-content {
+  flex: 2;
+  padding-left: 60px;
+}
+
+.timeline-content h4 {
+  margin: 0;
+  color: #F06000;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.timeline-content ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.timeline-content li {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.timeline-content a {
+  color: #F06000;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.timeline-content a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles for mobile view */
+@media screen and (max-width: 480px) {
+  #resume {
+    padding: 20px;
+  }
+
+  .resume-timeline {
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+  
+  p.lead {
+    font-size: 29px;
+  }
+
+  /* Hide the download icon on mobile view */
+  .download-icon {
+    display: none;
+  }
+
+  .timeline-block {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .timeline-ico {
+    margin-bottom: 10px;
+    margin-left: -20px;
+    height: 2rem; 
+    width: 2rem;
+    position: relative;
+    top: 1.5rem;
+  }
+
+  .timeline-content li {
+    font-size: 15px;
+  }
+
+  .timeline-header {
+    padding: 10px; 
+  }
+
+  .timeline-content {
+    padding-left: 0;
+  }
+}

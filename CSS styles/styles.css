@@ -1,0 +1,269 @@
+/* Reset some default styles */
+/* Reset margin and padding for all elements */
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles for the body */
+body {
+  font-family: Roboto, sans-serif;
+  line-height: 1.6;
+  color: #000000;
+  background-color: #f7f7f7;
+}
+
+/* Header and Navigation Styles */
+/* Styles for the header section */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #131313;
+  justify-content: center;
+  padding: 1rem;
+  color: #fff;
+  overflow-x: hidden;
+  transition: top 0.3s; /* Smooth transition when the header becomes fixed */
+}
+
+/* Styles for the fixed header */
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Active link style in the navigation */
+nav ul li.active a {
+  color: #c30000;
+}
+
+/* Styles for the navigation menu */
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 8px 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  padding: 15px 13px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #ff0000;
+}
+
+/* Main Content Styles */
+/* Container styles to center the content */
+.container {
+  max-width: auto;
+  margin: auto;
+}
+
+/* Headings and paragraphs styles */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Font-face declarations for custom fonts */
+/* Cinzel Decorative font */
+@font-face {
+  font-family: 'Cinzel Decorative';
+  src: url('../fonts/cinzeldecorative-bold.woff2') format('woff2'),
+       url('fonts/cinzeldecorative-bold.woff') format('woff'),
+       url('fonts/cinzeldecorative-bold.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Cinzel font */
+@font-face {
+  font-family: 'Cinzel';
+  src: url('../fonts/Cinzel/Cinzel-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Montserrat font */
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Crimson Text font */
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('../fonts/Crimson/CrimsonText-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Home Section Styles */
+/* Styling for the Home section */
+#home {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  text-align: center;
+  color: #ffffff;
+  background-image: url('../imgs/background.jpg');
+  background-size: cover;
+  background-position: center;
+  /* Add the following properties for the parallax effect */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+  margin-top: 25px;
+}
+
+/* Container styles for the home section */
+#home .container{
+  margin-left: 15%;
+}
+
+/* Heading styles for the home section */
+#home h2 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(104, 104, 104, 0.386);
+  font-family: 'Montserrat';
+  z-index: 5;
+}
+
+/* Style the first letter of the home section heading */
+#home h2::first-letter {
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+/* Paragraph styles for the home section */
+#home p {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  margin-top: -15px;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.411); /* Adjust the values as needed */
+}
+
+/* Social icons styles for the home section */
+.social-icons {
+  margin-top: 2rem;
+}
+
+.social-icons a {
+  margin-right: 1rem;
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #9b0000;
+}
+
+/* New responsive styles for mobile view */
+@media screen and (max-width: 768px) {
+  #home {
+    background-image: url('../imgs/background-mobile.jpg'); /* Replace with the mobile background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll; /* Remove the fixed attachment for mobile */
+  }
+
+  #home .container{
+    margin-left: 10%;
+  }
+
+  #home h2 {
+    font-size: 2rem;
+    z-index: 5;
+    justify-content: flex-start;
+  }
+
+  #home p {
+    justify-content: flex-start;
+    font-size: 10px;
+  }
+
+  .social-icons {
+    margin-top: 1rem;
+  }
+
+  .social-icons a {
+    margin-right: 0.5rem;
+    font-size: 20px;
+  }
+}
+
+/* Unique feature: Animated bouncing arrow */
+.bounce-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bounce-arrow i {
+  font-size: 2rem;
+  color: #c30000;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Footer Styles */
+/* Styles for the footer section */
+footer {
+  background-color: #111111;
+  color: #393939;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Footer logo styles */
+.footer-logo img {
+  width: 100px; /* Adjust the width according to your logo's size */
+  height: auto; /* Keep the aspect ratio */
+  margin: 0 auto 10px; /* Optional: Add some margin to separate the logo from the text */
+}
+
+/* Footer link styles */
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+}

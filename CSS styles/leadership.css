@@ -1,0 +1,398 @@
+/* Leadership Section Styles */
+
+/* Styling the Leadership section with appropriate margins, padding, and background color */
+#leadership {
+  margin-top: 60px;
+  padding: 2rem 0;
+  background-color: black;
+}
+
+/* Custom styles for the main heading within the Leadership section */
+h2.heading {
+  font-family: 'Montserrat';
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #c30000;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+/* Styling for the container that holds the leadership slides */
+#leadership .container {
+  background-color: black;
+  width: 100%;
+  height: 700px; /* Set a fixed height for the container */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide the overflowing part of the slides */
+}
+
+/* Styles for the subheadings within the Leadership section */
+#leadership h3{
+  font-family: 'Crimson Text';
+  color: darkgray;
+  font-style: italic;
+}
+
+/* Custom CSS styles for the carousel container */
+.slider {
+  width: 100%;
+  height: 540px; /* Set the height of the carousel relative to the container */
+  display: flex;
+}
+
+/* CSS styles for the fading effect on the edges of the carousel */
+.slider::before,
+.slider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 3%; /* Adjust the width of the fade effect as needed */
+  height: 100%;
+  z-index: 2;
+}
+
+/* Fading effect from black to transparent on the left side of the carousel */
+.slider::before {
+  left: 0;
+  background: linear-gradient(to right, black, rgba(0, 0, 0, 0));
+}
+
+/* Fading effect from black to transparent on the right side of the carousel */
+.slider::after {
+  right: 0;
+  background: linear-gradient(to left, black, rgba(0, 0, 0, 0));
+}
+
+/* Styles for individual slides in the carousel */
+.slide {
+  transition: transform 0.3s ease-in-out;
+  position: relative; /* Set slides to relative position */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  text-align: start;
+  background-color: transparent; /* Set background to transparent to show the image */
+  border: 2px solid #ccc; /* Add border to all slides */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  width: 280px; /* Set slides to occupy the full width of the carousel */
+  height: 400px !important; /* Set a fixed height for the slides using !important */
+  color: #fff; /* Set font color to white for text visibility */
+  border-radius: 10px; /* Set the border-radius for all slides */
+  margin: 11px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+/* Style for the background image of the slides */
+.slide-image {
+  position: absolute; /* Set the image to absolute position */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2; /* Adjust the opacity for the images */
+  z-index: 1; /* Send the image behind the text */
+  border-radius: 10px; /* Set the same border-radius as the slide */
+}
+
+/* Styling for the center slide to make it slightly larger */
+.slick-center {
+  transform: scale(1.1) translateY(-10px); /* Enlarge the selected slide */
+  border-radius: 20px; /* Set the desired border-radius */
+}
+
+/* Styling for the headings and paragraphs within the slides */
+.slide h2.leadership-position {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+  margin-bottom: 5px;
+  z-index: 2;
+}
+
+.slide p.location {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.slide p.descrip {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  font-style: italic;
+  z-index: 2;
+}
+
+.slide p.time {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 25px;
+  z-index: 2;
+}
+
+/* Styling for the navigation buttons */
+.prev-carousel,
+.next-carousel {
+  color: #555;
+  font-size: 48px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 3;
+}
+
+/* Hover effect on navigation buttons */
+.prev-carousel:hover,
+.next-carousel:hover {
+  color: #fff;
+}
+
+/* Positioning for the previous button */
+.prev-carousel {
+  left: 20px;
+}
+
+/* Positioning for the next button */
+.next-carousel {
+  right: 20px;
+}
+
+/* Lower font sizes for the selected slide */
+.slick-center h2.leadership-position {
+  font-size: 24px;
+}
+
+.slick-center p.location {
+  font-size: 16px;
+}
+
+.slick-center p.descrip {
+  font-size: 14px;
+}
+
+.slick-center p.time {
+  font-size: 12px;
+}
+
+/* Responsive styles for mobile view */
+@media screen and (max-width: 480px) {
+  /* Center align the subheadings */
+  #leadership h3 {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+/* Leadership Section Styles */
+
+/* Styling the Leadership section with appropriate margins, padding, and background color */
+#leadership {
+  margin-top: 60px;
+  padding: 2rem 0;
+  background-color: black;
+}
+
+/* Custom styles for the main heading within the Leadership section */
+h2.heading {
+  font-family: 'Montserrat';
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #c30000;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+/* Styling for the container that holds the leadership slides */
+#leadership .container {
+  background-color: black;
+  width: 100%;
+  height: 700px; /* Set a fixed height for the container */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide the overflowing part of the slides */
+}
+
+/* Styles for the subheadings within the Leadership section */
+#leadership h3{
+  font-family: 'Crimson Text';
+  color: darkgray;
+  font-style: italic;
+}
+
+/* Custom CSS styles for the carousel container */
+.slider {
+  width: 100%;
+  height: 540px; /* Set the height of the carousel relative to the container */
+  display: flex;
+}
+
+/* CSS styles for the fading effect on the edges of the carousel */
+.slider::before,
+.slider::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 3%; /* Adjust the width of the fade effect as needed */
+  height: 100%;
+  z-index: 2;
+}
+
+/* Fading effect from black to transparent on the left side of the carousel */
+.slider::before {
+  left: 0;
+  background: linear-gradient(to right, black, rgba(0, 0, 0, 0));
+}
+
+/* Fading effect from black to transparent on the right side of the carousel */
+.slider::after {
+  right: 0;
+  background: linear-gradient(to left, black, rgba(0, 0, 0, 0));
+}
+
+/* Styles for individual slides in the carousel */
+.slide {
+  transition: transform 0.3s ease-in-out;
+  position: relative; /* Set slides to relative position */
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  text-align: start;
+  background-color: transparent; /* Set background to transparent to show the image */
+  border: 2px solid #ccc; /* Add border to all slides */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  width: 280px; /* Set slides to occupy the full width of the carousel */
+  height: 400px !important; /* Set a fixed height for the slides using !important */
+  color: #fff; /* Set font color to white for text visibility */
+  border-radius: 10px; /* Set the border-radius for all slides */
+  margin: 11px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+/* Style for the background image of the slides */
+.slide-image {
+  position: absolute; /* Set the image to absolute position */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2; /* Adjust the opacity for the images */
+  z-index: 1; /* Send the image behind the text */
+  border-radius: 10px; /* Set the same border-radius as the slide */
+}
+
+/* Styling for the center slide to make it slightly larger */
+.slick-center {
+  transform: scale(1.1) translateY(-10px); /* Enlarge the selected slide */
+  border-radius: 20px; /* Set the desired border-radius */
+}
+
+/* Styling for the headings and paragraphs within the slides */
+.slide h2.leadership-position {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+  margin-bottom: 5px;
+  z-index: 2;
+}
+
+.slide p.location {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+  z-index: 2;
+}
+
+.slide p.descrip {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  font-style: italic;
+  z-index: 2;
+}
+
+.slide p.time {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 25px;
+  z-index: 2;
+}
+
+/* Styling for the navigation buttons */
+.prev-carousel,
+.next-carousel {
+  color: #555;
+  font-size: 48px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 3;
+}
+
+/* Hover effect on navigation buttons */
+.prev-carousel:hover,
+.next-carousel:hover {
+  color: #fff;
+}
+
+/* Positioning for the previous button */
+.prev-carousel {
+  left: 20px;
+}
+
+/* Positioning for the next button */
+.next-carousel {
+  right: 20px;
+}
+
+/* Lower font sizes for the selected slide */
+.slick-center h2.leadership-position {
+  font-size: 24px;
+}
+
+.slick-center p.location {
+  font-size: 16px;
+}
+
+.slick-center p.descrip {
+  font-size: 14px;
+}
+
+.slick-center p.time {
+  font-size: 12px;
+}
+
+/* Responsive styles for mobile view */
+@media screen and (max-width: 480px) {
+  /* Center align the subheadings */
+  #leadership h3 {
+    text-align: center;
+    font-size: 14px;
+  }
+}

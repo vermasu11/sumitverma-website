@@ -1,0 +1,78 @@
+/* About Section Styles - My Custom Styles for the About Section */
+
+/* Resetting default list styles for better control over the appearance */
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Applying custom styles to the About section to make it visually appealing */
+#about {
+  margin-bottom: 0;
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+/* I chose the 'Montserrat' font-family and set a font size for the main heading */
+#about h2 {
+  font-family: 'Montserrat';
+  font-size: 2.5rem;
+  color: #c30000;
+  margin-bottom: 30px;
+}
+
+/* Setting the font size and color for the paragraphs within the About section */
+#about p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* Getting creative with the list items by displaying them in a flexible grid */
+#about ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+}
+
+/* Styling individual list items with a fixed size and subtle shadow */
+#about li {
+  font-size: 1rem;
+  color: #555;
+  max-width: 250px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Adding a smooth scaling effect on hover to enhance interactivity */
+#about li:hover {
+  transform: scale(1.05);
+}
+
+/* Applying different background colors for alternating list items to create contrast */
+#about li:nth-child(even) {
+  color: #ffff;
+  background-color: #000000;
+}
+
+#about li:nth-child(odd) {
+  color: #ffff;
+  background-color: #000000;
+}
+
+/* Implementing responsive styles for better presentation on mobile devices */
+@media screen and (max-width: 480px) {
+  /* Modifying the font size and padding for better readability on small screens */
+  #about p.about-opening {
+    padding: 5px;
+    margin: 5px;
+    font-size: 14px;
+  }
+}

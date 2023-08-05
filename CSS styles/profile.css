@@ -1,0 +1,50 @@
+/* Profile Section Styles */
+
+/* Styling the profile section with appropriate padding, width, and background */
+#profile {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  background-image: url('../imgs/profile.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+/* Styling for the profile-container to center and format the content */
+.profile-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 3;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.971); 
+  padding: 20px; 
+  border-radius: 10px; /* Add rounded corners to the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+/* Styling for the profile-container2 to align and format the content */
+.profile-container {
+  text-align: center;
+  z-index: 3;
+}
+
+/* Styling for the heading and paragraph within the profile-container */
+.profile-container h2 {
+  font-family: 'Montserrat';
+  color: #bc0000; /* Set the color of the heading */
+  font-size: 24px; 
+  margin-bottom: 10px;
+}
+
+.profile-container p {
+  color: #000000; /* Set the color of the paragraph text */
+  font-size: 16px; 
+}

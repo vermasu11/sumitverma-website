@@ -1,0 +1,79 @@
+/* Contact Section Styles */
+
+/* Styling the Contact section with appropriate margins, background, and padding */
+#contact {
+  margin-top: 30px;
+  background: #000000;
+  padding-top: 12rem;
+  padding-bottom: 7.2rem;
+  text-align: center;
+  color: white;
+}
+
+/* Custom styles for the heading within the Contact section */
+#contact .section-intro h1 {
+  color: white;
+}
+
+/* Setting font-family, font-size, and color for the subheading in the Contact section */
+#contact .section-intro h5 {
+  font-family: 'Montserrat';
+  font-size: 2rem;
+  color: #c30000;
+}
+
+/* Customizing the color of the paragraph text within the Contact section */
+#contact .section-intro p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Styles for the contact information section */
+.contact-info {
+  margin: 3rem auto 0;
+  font-family: "poppins-regular", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Arranging the contact info icons in a row with some spacing */
+.contact-info .icon {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/* Icon styles for the contact info icons */
+.contact-info .icon i {
+  font-size: 4.2rem;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+}
+
+/* Adding a hover effect on the contact info icons */
+.contact-info .icon i:hover {
+  color: #9b0000;
+}
+
+/* Styles for the resume download icon, which is displayed on larger screens */
+.contact-info .resume-icon {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+/* Icon styles for the resume download icon */
+.contact-info .resume-icon i {
+  font-size: 4.2rem;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+}
+
+/* Adding a hover effect on the resume download icon */
+.contact-info .resume-icon i:hover {
+  color: #9b0000;
+}
+
+/* Hide the resume download icon in mobile view */
+@media (max-width: 768px) {
+  .contact-info .resume-icon {
+    display: none;
+  }
+}
